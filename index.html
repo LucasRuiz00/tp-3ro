@@ -5,19 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora de vectores</title>
-    <script src="app.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header><h1>Calculadora de vectores</h1></header>
     <main>
-        <h2>ingrese la masa del cuerpo en kg</h2>
+        <h2 class="pregunta">ingrese la masa del cuerpo en kg</h2>
         <input type="number" name="masa" id="masa" placeholder="ingrese masa">
-        <h2>ingrese la fuerza aplicada al cuepo (en - para moverlo en la direccion opuesta)</h2>
+        <h2 class="pregunta">ingrese la fuerza aplicada al cuepo (en - para moverlo en la direccion opuesta)</h2>
         <input type="number" name="fuerza" id="fuerza" placeholder="ingrese fuerza">
-        <h2>el plano esta inclinado? (s/n)</h2>
-        <input type="text" name="plano" id="incli">
-        <H2 id="grados">cuantos grados esta inclinado el plano?</H2>
+
+
+        <h2 class="pregunta" >el plano esta inclinado? (s/n)</h2>
+        <label class="switch">
+            <input type="checkbox" id="plano" onclick="planoS()">
+            <span class="slider"></span>
+          </label>
+
+          <div id="planoq" class="grades"> 
+            <h2 class="grades">cuantos grados esta inclinado el plano?</h2>
+            <input type="number" id="grados">   
+        
+        </div>
+
+          <h2 class="pregunta" >hay friccion?</h2>
+          <label class="switch">
+              <input type="checkbox" id="friccion" onclick="friccionS()">
+              <span class="slider"></span>
+            </label>
+
+        
+         <div id="friccionq"></div> 
         
         
         
@@ -28,6 +48,6 @@
     
     </main>
     <footer></footer>
-    
+ <script src="app.js"></script>   
 </body>
 </html>

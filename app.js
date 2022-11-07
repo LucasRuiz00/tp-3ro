@@ -1,4 +1,11 @@
 var a, f, ffd, ffe, fuerzaNeta, fx, g, inc, m, material, pesoy, ud, ue;
+
+let planosi;
+let friccionsi;
+planosi= document.getElementById("plano");
+friccionsi= document.getElementById("materiales");
+
+
 function calcular() {
     m = (document.getElementById("masa"));
     m = parseFloat(m);
@@ -10,11 +17,21 @@ function calcular() {
 }
 g = 9.8;
 
-let inclinacion
- if (inclinacion) { document.getElementById("incli") == s;
- innerHTML = ("grados;")
-    
- }
+function planoS(){
+    const planoq = document.getElementById("planoq");
+    if (planosi == true) { 
+        document.getElementById("planoq").style = 'display:block'
+        
+    }
+
+};
+
+
+
+
+
+
+
 
 
 
