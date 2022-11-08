@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora de vectores</title>
-    
+    <title>Document</title>
+    <!-- <script src="app.js"></script> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header><h1>Calculadora de vectores</h1></header>
+    <header>Calculadora de vectores</header>
+    <nav></nav>
     <main>
-        <h2 class="pregunta">ingrese la masa del cuerpo en kg</h2>
-        <input type="number" name="masa" id="masa" placeholder="ingrese masa">
-        <h2 class="pregunta">ingrese la fuerza aplicada al cuepo (en - para moverlo en la direccion opuesta)</h2>
-        <input type="number" name="fuerza" id="fuerza" placeholder="ingrese fuerza">
-
-
-        <h2 class="pregunta" >el plano esta inclinado? (s/n)</h2>
-        <label class="switch">
-            <input type="checkbox" id="plano" onclick="planoS()">
-            <span class="slider"></span>
-          </label>
-
-          <div id="planoq" class="grades"> 
-            <h2 class="grades">cuantos grados esta inclinado el plano?</h2>
-            <input type="number" id="grados">   
-        
+        <div>
+            <h2>cual es la masa del cuerpo?</h2>
+            <input type="number" placeholder="ingresar valor de masa en kg" id="masa">
         </div>
+        <div>
+            <h2>cual es la fuerza aplicada al cuerpo?</h2>
+            <input type="number" placeholder="ingresar la fuerza aplicada al cuerpo" id="fuerza">
+        </div>
+        <div id="plano">
+            <h2>El plano esta inclinado?</h2>
+            <label class="switch">
+                <input type="checkbox" id="planoS" onclick="ps()">
+                <span class="slider"></span>
+              </label>
+        </div>
+        <div id="gradosp"></div>
 
-          <h2 class="pregunta" >hay friccion?</h2>
-          <label class="switch">
-              <input type="checkbox" id="friccion" onclick="friccionS()">
-              <span class="slider"></span>
-            </label>
-
-        
-         <div id="friccionq"></div> 
-        
-        
-        
-       
-
-    
-    
-    
+        <div id="friccion">
+            <h2>hay friccion?</h2>
+            <label class="switch">
+                <input type="checkbox" id="friccionS" onclick="fs()">
+                <span class="slider"></span>
+              </label>
+        </div>
+        <div id="materiales"></div>
+     
+     
     </main>
     <footer></footer>
- <script src="app.js"></script>   
+    
 </body>
+<script src="index.js"></script>
 </html>
