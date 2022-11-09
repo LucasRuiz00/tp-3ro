@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="app.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Calculadora de vectores</header>
+    <nav></nav>
+    <main>
+        <div>
+            <h2>cual es la masa del cuerpo?</h2>
+
+            <input type="number" name="nummasa" placeholder="ingresar valor de masa en kg" id="masa" >
+            <button type="button" onclick="capmasa()">hecho</button>
+        </div>
+
+
+        <div>
+            <h2>cual es la fuerza aplicada al cuerpo?</h2>
+
+            <input type="number" name="numfuerza" placeholder="ingresar la fuerza aplicada al cuerpo" id="fuerza">
+            <button type="button" onclick="capfuerza()">hecho</button>
+        </div>
+
+
+        <div id="plano">
+            <h2>El plano esta inclinado?</h2>
+            <label class="switch">
+                <input type="checkbox" id="planoS" >
+                <span class="slider"></span>
+              </label>
+        </div>
+        <div id="gradosp"></div>
+
+        <div id="friccion">
+            <h2>hay friccion?</h2>
+            <label class="switch">
+                <input type="checkbox" id="friccionS" >
+                <span class="slider"></span>
+              </label>
+        </div>
+        <div id="materiales"></div>
+     
+     
+    </main>
+    <footer></footer>
+    
+</body>
+<script src="index.js"></script>
+</html>
